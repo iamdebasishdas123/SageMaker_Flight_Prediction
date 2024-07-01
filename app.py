@@ -266,14 +266,7 @@ y_train = train.price.copy()
 # fit and save the preprocessor
 preprocessor.fit(X_train, y_train)
 
-# Define a valid file path for saving the preprocessor
-save_path = r"C:\Users\Debasish Das\Documents\01_ML Project\Ml Projects\Flight_Price_Prediction\preprocessor.joblib"
-
-# Ensure the directory exists
-os.makedirs(os.path.dirname(save_path), exist_ok=True)
-
-# Save the preprocessor
-joblib.dump(preprocessor, save_path)
+joblib.dump(preprocessor, "preprocessor.joblib")
 
 # web application
 st.set_page_config(
