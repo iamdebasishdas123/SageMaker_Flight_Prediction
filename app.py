@@ -259,7 +259,7 @@ preprocessor = Pipeline(steps=[
 ])
 
 # read the training data
-train = pd.read_csv(r"C:\Users\Debasish Das\Documents\01_ML Project\Ml Projects\Flight_Price_Prediction\Dataset\train.csv")
+train = pd.read_csv("train.csv")
 X_train = train.drop(columns="price")
 y_train = train.price.copy()
 
