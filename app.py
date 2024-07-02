@@ -333,9 +333,14 @@ if st.button("Predict"):
 	saved_preprocessor = joblib.load("preprocessor.joblib")
 	x_new_pre = saved_preprocessor.transform(x_new)
 
-	with open("XGboost-model", "rb") as f:
+	with open("XGB-model", "rb") as f:
 		model = pickle.load(f)
 	x_new_xgb = xgb.DMatrix(x_new_pre)
 	pred = model.get_booster().predict(x_new_xgb)[0]
 
 	st.info(f"The predicted price is {pred:,.0f} INR")
+st.markdown("""
+    <div class="footer">
+    <p>Made by- ✈️Debasish Das🌍</p>
+    </div>
+""", unsafe_allow_html=True)
