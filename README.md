@@ -1,6 +1,6 @@
 ## Usage
 To run the project locally:
-1. Clone the repository: `git clone https://github.com/your-repo/Flight_Price_Prediction.git`
+1. Clone the repository: `git clone https://github.com/iamdebasishdas123/SageMaker_Flight_Prediction`
 2. Install dependencies: `pip install -r requirements.txt`
 3. Run the Streamlit app: `streamlit run app.py`
 ---
